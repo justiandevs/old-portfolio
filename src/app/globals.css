@@ -6,6 +6,10 @@
     font-family: 'Proxima Nova', sans-serif;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     @apply bg-stone-50;
 }
@@ -30,11 +34,11 @@ a:not(.nav__item):not(.social-media) {
 }
 
 .nav__item {
-    @apply -ml-4 px-4 transition duration-300 border border-transparent hover:border-stone-200 rounded-xl py-2;
+    @apply md:-ml-4 md:px-4 transition duration-300 md:border md:border-transparent md:hover:border-stone-200 md:rounded-xl md:py-2;
 }
 
 .nav__item-active {
-    @apply border-stone-200;
+    @apply md:border-stone-200 text-green-700 md:text-black;
 }
 
 .icon {
