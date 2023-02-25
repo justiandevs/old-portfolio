@@ -29,7 +29,7 @@ p {
     line-height: 1.5rem;
 }
 
-a:not(.nav__item):not(.social-media) {
+a:not(.nav__item):not(.social-media):not(.button) {
     @apply underline text-green-700 font-bold;
 }
 
@@ -49,4 +49,12 @@ a:not(.nav__item):not(.social-media) {
 .little {
     font-size: 0.875rem;
     font-weight: 300;
+}
+
+.button {
+    @apply text-green-700 px-4 py-2 border border-gray-200 rounded-xl font-semibold flex flex-row gap-2 items-center transition duration-300 hover:bg-green-700 hover:text-white;
+}
+
+.content {
+    @apply mt-8;
 }
