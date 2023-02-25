@@ -9,24 +9,10 @@ import {FaChartLine, FaGithub, FaInstagram, FaLinkedin, FaSpotify, FaTwitter} fr
 import {MenuButton} from "@/components/MenuButton";
 import {easeIn, motion} from "framer-motion";
 
-export const NavBar = () => {
-  const [artist, setArtist] = useState();
+export const NavBar = ({ artist }: { artist: string }) => {
   const [isOpen, setOpen] = useState(false);
 
   const pathname = usePathname();
-
-  useEffect(() => {
-    const fetchRecentTrack = async () => {
-      const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=justiandev&api_key=${process.env.NEXT_PUBLIC_API_KEY_MUSIC}&format=json`);
-
-      const json = await response.json();
-
-      setArtist(json.recenttracks.track[0].artist["#text"]);
-    }
-
-    fetchRecentTrack()
-      .catch(console.error);
-  }, [])
 
   const variants = {
     open: { translateX: "0%", transition: { duration: 0.3, ease: "easeIn", staggerChildren: 0.05, delayChildren: 0.5 } },
