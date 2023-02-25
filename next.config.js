@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 const ContentSecurityPolicy = `
   default-src 'self';
-  script-src 'self';
+  script-src 'self' 'unsafe-inline';
   child-src 'self' 'typekit.com';
-  style-src 'self' 'typekit.com';
+  style-src 'self' 'typekit.com' 'unsafe-inline';
   font-src 'self' 'typekit.com';  
 `
 
