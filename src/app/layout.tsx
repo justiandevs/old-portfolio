@@ -23,8 +23,8 @@ export default function RootLayout({
           <main>
             {children}
           </main>
-          <footer>
-            Blob
+          <footer className="opacity-50 py-16">
+            Copyright © 2022 - {new Date().getFullYear()} | CoC: 89274482 | VAT-ID: NL004712093B24
           </footer>
         </div>
       </body>

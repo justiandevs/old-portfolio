@@ -6,9 +6,12 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {useEffect, useState} from "react";
 import {FaChartLine, FaGithub, FaInstagram, FaLinkedin, FaSpotify, FaTwitter} from "react-icons/fa";
+import {MenuButton} from "@/components/MenuButton";
+import {easeIn, motion} from "framer-motion";
 
 export const NavBar = () => {
   const [artist, setArtist] = useState();
+  const [isOpen, setOpen] = useState(false);
 
   const pathname = usePathname();
 
@@ -25,10 +28,78 @@ export const NavBar = () => {
       .catch(console.error);
   }, [])
 
+  const variants = {
+    open: { translateX: "0%", transition: { duration: 0.3, ease: "easeIn", staggerChildren: 0.05, delayChildren: 0.5 } },
+    closed: { translateX: "100%", transition: { duration: 0.3, ease: "easeOut" } }
+  }
+
+  const push = {
+    open: { translateY: "0%", scale: 1, translateX: "0%", rotate: 0, transition: { duration: 0.3 } },
+    closed: { translateY: "100%", scale: 0, translateX: "-25%", rotate: 45, transition: { duration: 0.3 } },
+  }
+
   return (
-    <nav className="lg:col-span-2 col-span-1 lg:flex flex-col gap-8">
-      <Image src={myself} alt="profile picture of myself" priority={true} className="rounded-full w-24 h-24 border-2 border-green-900" />
-      <div className="flex flex-col items-start gap-1">
+    <nav className="lg:col-span-2 col-span-1 flex flex-row lg:flex-col gap-8 py-8 lg:py-0 justify-between lg:justify-start items-center lg:items-start">
+      <Image src={myself} alt="profile picture of myself" priority={true} className="rounded-full h-20 w-20 lg:w-24 lg:h-24 border-2 border-green-900" />
+      <div className="block md:hidden rounded-full border border-stone-200 p-4 z-50">
+        <MenuButton
+          isOpen={isOpen}
+          onClick={() => setOpen(!isOpen)}
+          strokeWidth={2}
+        />
+      </div>
+        <motion.div
+          initial={"closed"}
+          animate={isOpen ? "open" : "closed"}
+          variants={variants}
+          className="fixed w-full left-0 top-0 bottom-0 h-full flex flex-col bg-stone-50 z-10 items-center justify-center gap-4 text-2xl hover:text-green-700 overflow-hidden">
+          <div className="overflow-y-hidden h-auto">
+            <motion.div
+              variants={push}
+            >
+              <Link href={"/"} className={`nav__item ${pathname === "/" ? "nav__item-active" : ""}`}>
+                Home
+              </Link>
+            </motion.div>
+          </div>
+          <div className="overflow-y-hidden h-auto">
+            <motion.div
+              variants={push}
+            >
+              <Link href={"/about"} className={`nav__item ${pathname === "/about" ? "nav__item-active" : ""}`}>
+                About
+              </Link>
+            </motion.div>
+          </div>
+          <div className="overflow-y-hidden h-auto">
+            <motion.div
+              variants={push}
+            >
+              <Link href={"/work"} className={`nav__item ${pathname === "/about" ? "nav__item-active" : ""}`}>
+                My work
+              </Link>
+            </motion.div>
+          </div>
+          <div className="overflow-y-hidden h-auto">
+            <motion.div
+              variants={push}
+            >
+              <Link href={"/blog"} className={`nav__item ${pathname === "/about" ? "nav__item-active" : ""}`}>
+                Blog
+              </Link>
+            </motion.div>
+          </div>
+          <div className="overflow-y-hidden h-auto">
+            <motion.div
+              variants={push}
+            >
+              <Link href={"/contact"} className={`nav__item ${pathname === "/about" ? "nav__item-active" : ""}`}>
+                Contact
+              </Link>
+            </motion.div>
+          </div>
+        </motion.div>
+      <div className="hidden md:flex flex-row lg:flex-col items-start gap-4 lg:gap-1">
         <Link href={"/"} className={`nav__item ${pathname === "/" ? "nav__item-active" : ""}`}>
           Home
         </Link>
@@ -45,7 +116,7 @@ export const NavBar = () => {
           Contact
         </Link>
       </div>
-      <div className="flex flex-col gap-2">
+      <div className="hidden lg:flex flex-col gap-2">
         <hr />
         <div className="flex flex-row gap-2 mt-2">
           <FaSpotify className="icon" />
@@ -57,7 +128,7 @@ export const NavBar = () => {
         </div>
         <hr />
       </div>
-      <div className="flex flex-col gap-4">
+      <div className="hidden lg:flex flex-col gap-4">
         <a href="https://www.linkedin.com/in/justian-spijkerbosch-a4b74118b/" className="flex flex-row gap-2 social-media transition duration-300 hover:text-green-700">
           <FaLinkedin className="icon" />
           <p className="little">LinkedIn</p>
