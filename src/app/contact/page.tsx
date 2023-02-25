@@ -9,6 +9,12 @@ import {
   FaTwitter,
   FaWarehouse
 } from "react-icons/fa";
+import {Metadata} from "next";
+
+export const metadata: Metadata = {
+  title: 'Get in touch with me - Justian.dev',
+  description: 'If you are looking for a full stack website, app or web app. Or just have a question about me or one of my projects. You can always email me or say hi at one of the social networks listed below',
+}
 
 export default function Page() {
   return (

@@ -1,6 +1,12 @@
 import {Hero} from "@/components/Hero";
 import {FaArrowRight, FaGit, FaGithub, FaKeyboard, FaPen, FaRocket} from "react-icons/fa";
 import Link from "next/link";
+import {Metadata} from "next";
+
+export const metadata: Metadata = {
+  title: 'Full stack freelance developer from the Netherlands - Justian.dev',
+  description: 'I am Justian Spijkerbosch. A full stack developer from Apeldoorn, Netherlands. I have been a hobby programmer for a number of years and since start 2023 a freelance full stack developer',
+}
 
 export default function Home() {
   return (

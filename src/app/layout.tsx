@@ -1,10 +1,34 @@
 import './globals.css'
 import Head from "next/head";
 import {NavBar} from "@/components/NavBar";
+import {Metadata} from "next";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Justian.dev',
   description: 'I am Justian Spijkerbosch. A full stack developer from Apeldoorn, Netherlands. I have been a hobby programmer for a number of years and since start 2023 a freelance full stack developer',
+  generator: 'Justian.dev',
+  applicationName: 'Justian.dev',
+  referrer: 'origin-when-cross-origin',
+  keywords: ['Freelance', 'developer', 'Apeldoorn', 'full stack', 'Justian', 'Spijkerbosch', 'Nederland', 'Netherlands', 'NextJS', 'React', 'NestJS', 'TypeScript', 'Javascript', 'Performance', 'UX', 'Interaction Design', 'Interaction Development'],
+  authors: [{ name: 'Justian Spijkerbosch '}],
+  colorScheme: "light",
+  themeColor: "white",
+  creator: "Justian Spijkerbosch",
+  publisher: "Justian Spijkerbosch",
+  openGraph: {
+    title: "Justian.dev",
+    description: "I am Justian Spijkerbosch. A full stack developer from Apeldoorn, Netherlands. I have been a hobby programmer for a number of years and since start 2023 a freelance full stack developer",
+    url: "https://justian.dev",
+    siteName: "Justian.dev",
+    locale: "en-US",
+    type: "website"
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Justian.dev',
+    description: 'I am Justian Spijkerbosch. A full stack developer from Apeldoorn, Netherlands',
+    creator: '@justiandev'
+  }
 }
 
 const getMostRecentArtist = async () => {

@@ -11,6 +11,12 @@ import notion from '../../../public/images/notion.png';
 import git from '../../../public/images/git.png';
 import adobexd from '../../../public/images/adobexd.png';
 import figma from '../../../public/images/figma.png';
+import {Metadata} from "next";
+
+export const metadata: Metadata = {
+  title: 'Who am I and what I do on daily basis - Justian.dev',
+  description: 'I am Justian Spijkerbosch. A full stack developer from Apeldoorn, Netherlands. I have been a hobby programmer for a number of years and since start 2023 a freelance full stack developer',
+}
 
 export default function Page() {
   return (
