@@ -38,7 +38,7 @@ a:not(.nav__item):not(.social-media) {
 }
 
 .nav__item-active {
-    @apply md:border-stone-200 text-green-700 md:text-black;
+    @apply md:border-stone-200 md:text-black;
 }
 
 .icon {

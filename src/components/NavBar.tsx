@@ -52,12 +52,12 @@ export const NavBar = () => {
           initial={"closed"}
           animate={isOpen ? "open" : "closed"}
           variants={variants}
-          className="fixed w-full left-0 top-0 bottom-0 h-full flex flex-col bg-stone-50 z-10 items-center justify-center gap-4 text-2xl hover:text-green-700 overflow-hidden">
+          className="fixed w-full left-0 top-0 bottom-0 h-full flex flex-col bg-stone-50 z-10 items-center justify-center gap-4 text-2xl overflow-hidden">
           <div className="overflow-y-hidden h-auto">
             <motion.div
               variants={push}
             >
-              <Link href={"/"} className={`nav__item ${pathname === "/" ? "nav__item-active" : ""}`}>
+              <Link onClick={() => setOpen(!isOpen)} href={"/"} className={`nav__item ${pathname === "/" ? "nav__item-active" : ""}`}>
                 Home
               </Link>
             </motion.div>
@@ -66,7 +66,7 @@ export const NavBar = () => {
             <motion.div
               variants={push}
             >
-              <Link href={"/about"} className={`nav__item ${pathname === "/about" ? "nav__item-active" : ""}`}>
+              <Link onClick={() => setOpen(!isOpen)} href={"/about"} className={`nav__item ${pathname === "/about" ? "nav__item-active" : ""}`}>
                 About
               </Link>
             </motion.div>
@@ -75,7 +75,7 @@ export const NavBar = () => {
             <motion.div
               variants={push}
             >
-              <Link href={"/work"} className={`nav__item ${pathname === "/about" ? "nav__item-active" : ""}`}>
+              <Link onClick={() => setOpen(!isOpen)} href={"/work"} className={`nav__item ${pathname === "/about" ? "nav__item-active" : ""}`}>
                 My work
               </Link>
             </motion.div>
@@ -84,7 +84,7 @@ export const NavBar = () => {
             <motion.div
               variants={push}
             >
-              <Link href={"/blog"} className={`nav__item ${pathname === "/about" ? "nav__item-active" : ""}`}>
+              <Link onClick={() => setOpen(!isOpen)} href={"/blog"} className={`nav__item ${pathname === "/about" ? "nav__item-active" : ""}`}>
                 Blog
               </Link>
             </motion.div>
@@ -93,7 +93,7 @@ export const NavBar = () => {
             <motion.div
               variants={push}
             >
-              <Link href={"/contact"} className={`nav__item ${pathname === "/about" ? "nav__item-active" : ""}`}>
+              <Link onClick={() => setOpen(!isOpen)} href={"/contact"} className={`nav__item ${pathname === "/about" ? "nav__item-active" : ""}`}>
                 Contact
               </Link>
             </motion.div>
