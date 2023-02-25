@@ -1,3 +1,48 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    font-family: 'Proxima Nova', sans-serif;
+}
+
+body {
+    @apply bg-stone-50;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+a:not(.nav__item):not(.social-media) {
+    @apply underline text-green-700 font-bold;
+}
+
+.nav__item {
+    @apply -ml-4 px-4 transition duration-300 border border-transparent hover:border-stone-200 rounded-xl py-2;
+}
+
+.nav__item-active {
+    @apply border-stone-200;
+}
+
+.icon {
+    font-size: 1.5rem;
+    @apply text-green-700;
+}
+
+.little {
+    font-size: 0.875rem;
+    font-weight: 300;
+}
