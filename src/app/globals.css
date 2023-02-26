@@ -34,7 +34,7 @@ p {
     line-height: 1.5rem;
 }
 
-a:not(.nav__item):not(.social-media):not(.button):not(.button__is-large) {
+a:not(.nav__item):not(.social-media):not(.button):not(.button__is-large):not(.post) {
     @apply underline text-green-700 font-bold;
 }
 

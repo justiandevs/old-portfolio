@@ -25,7 +25,7 @@ export const NavBar = ({ artist }: { artist: string }) => {
   }
 
   return (
-    <nav className="lg:col-span-2 col-span-1 flex flex-row lg:flex-col gap-8 py-8 lg:py-0 justify-between lg:justify-start items-center lg:items-start">
+    <nav className="lg:col-span-2 col-span-1 flex flex-row lg:flex-col gap-8 py-8 lg:py-0 justify-between lg:justify-start items-center lg:items-start lg:mb-32">
       <Image src={myself} alt="profile picture of myself" priority={true} className="rounded-full h-20 w-20 lg:w-24 lg:h-24 border-2 border-green-900" />
       <div className="block md:hidden rounded-full border border-stone-200 p-4 z-50">
         <MenuButton
