@@ -4,12 +4,14 @@ import matter from "gray-matter";
 import {Hero} from "@/components/Hero";
 import Link from "next/link";
 
+export const dynamic = 'error';
+
 export const metadata: Metadata = {
   title: 'Blog - Justian.dev',
   description: 'I regularly write blogs about (non) technical topics on such a manner that everybody can understand them',
 }
 
-export async function getAllPosts() {
+async function getAllPosts() {
   const posts = fs.readdirSync('./posts');
 
   return posts.map((slug: string) => {
@@ -25,7 +27,7 @@ export async function getAllPosts() {
 
 export default async function Blog() {
   const posts = await getAllPosts();
-  
+
   return (
     <>
       <Hero title="Blog" description="I just like to write about the things I think are interesting" />
