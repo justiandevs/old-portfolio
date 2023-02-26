@@ -1,20 +1,25 @@
 ---
 title: Playmobilize
 slug: playmobilize
-description: Welcome to my first project ever written.
+description: Website for a Playmobil collector that allows search of his collection.
 type: featured
 button_text: View project
 button_link: https://playmobilize.com
 ---
-## Welcome!
-I am happy to see that you have found my blog. Welcome! First of all I would like to introduce you to the topics I will be writing about on my blog.
+![image](/assets/playmobilize.png)
 
-- I would like to start writing about certain technical solutions to problems I encounter in everyday life, such as how to integrate highlightJS (for code highlighting) with a tool like MDXRemote.
-- I would additionally like to start writing about the projects I do set up. And about how I do this both technically and business-wise.
-- Possibly much other things, if I feel alright about it.
+## What is Playmobilize?
+Playmobilize is a website about Marc van Kasteren's Playmobil collection. He specializes in creating custom army units with Playmobil figures, around this he builds large scenes which he photographs and posts on Playmobilize once in a while.
 
-If you are interested in those topics, I would recommend saving my blog and coming back regularly to see if I have posted anything new. For now, I would recommend going to my [contact page](/contact) for contact options, such as my social media, to stay up to date.
+## Technical requirements
+Marc wanted a site that had to be very usable: Design was not very important, he wanted to use white and black as colors and "Impact" as a font. In addition, the site should offer possibilities to see "themes" and "units", these are related to each other and through both, therefore, you also had to be able to navigate to either the corresponding theme or units. In addition, with units you had to be able to filter by some information, such as the time period the army unit is from.
 
-```javascript
-console.log('End of this article 😔, have a nice day!');
-```
+Behind all these options for the end user is also a dashboard; through here Marc can easily manage the site and add, delete and/or edit content.
+
+## Tech stack
+I used several techniques to build this site:
+
+- Plain PHP8.2
+- BootstrapCSS
+- MySQL / PDO
+- A bit of plain Javascript
