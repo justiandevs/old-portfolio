@@ -2,6 +2,7 @@ import './globals.css'
 import Head from "next/head";
 import {NavBar} from "@/components/NavBar";
 import {Metadata} from "next";
+import {Analytics} from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: 'Justian.dev',
@@ -59,6 +60,7 @@ export default async function RootLayout({
             Copyright © 2022 - {new Date().getFullYear()} | CoC: 89274482 | VAT-ID: NL004712093B24
           </footer>
         </div>
+      <Analytics />
       </body>
     </html>
   )
