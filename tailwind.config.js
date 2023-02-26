@@ -9,7 +9,16 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      'sans': ['Proxima Nova'],
+      'serif': ['Proxima Nova'],
+      'mono': ['Proxima Nova'],
+      'display': ['Proxima Nova'],
+      'body': ['Proxima Nova']
+    },
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography')
+  ],
 }
