@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const ContentSecurityPolicy = `
-  default-src 'self' 'vitals.vercel-insights.com' 'vercel-insights.com';
+  default-src 'self' 'vitals.vercel-insights.com' 'vercel-insights.com' 'https://vitals.vercel-insights.com';
   script-src 'self' 'unsafe-inline' 'unsafe-eval';
   child-src 'self';
   style-src 'self' 'unsafe-inline';
