@@ -19,7 +19,7 @@ export const Hero = ({ title, description, button = false, text = "", link = "",
         <p className="italic font-thin -mt-1 text-green-700 text-[1.125rem]">{ description }</p>
       </div>
       {button &&
-        <Link href={link} className="button">
+        <Link href={link} target="_blank" className="button">
           {iconLeft && iconLeft}
           {text}
           {iconRight && iconRight}

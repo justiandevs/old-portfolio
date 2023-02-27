@@ -32,7 +32,7 @@ export default async function Home() {
 
   return (
     <>
-      <Hero title="Justian Spijkerbosch 😌" description="Freelance full stack developer" />
+      <Hero title="Justian Spijkerbosch 😄" description="Freelance full stack developer" />
       <section className="content">
         <p>
           Welcome in my digital garden 👋. I am a highly motivated computer science student from the Netherlands and a freelance full stack developer. I am mainly focused on developing projects I like and building great user friendly experiences around them.
@@ -52,7 +52,7 @@ export default async function Home() {
           </div>
         </div>
         <p>
-          In my daily life, I am mainly busy with school, for which I am currently doing an internship at <a href="https://mrboost.nl">MrBoost</a>. In addition, as an indie hacker / solo entrepreneur I like to build <Link href={"/work"}>my projects</Link>. To finance this I am also active as a freelancer, for which you can <Link href={"/contact"}>hire me</Link>.
+          In my daily life, I am mainly busy with school, for which I am currently doing an internship at <a href="https://mrboost.nl" target="_blank">MrBoost</a>. In addition, as an indie hacker / solo entrepreneur I like to build <Link href={"/work"}>my projects</Link>. To finance this I am also active as a freelancer, for which you can <Link href={"/contact"}>hire me</Link>.
         </p>
         <hr className="my-8" />
         <h2>My recent work</h2>

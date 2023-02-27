@@ -33,7 +33,7 @@ export const metadata: Metadata = {
 }
 
 const getMostRecentArtist = async () => {
-  const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=justiandev&api_key=${process.env.API_KEY_MUSIC}&format=json`);
+  const response = await fetch(`https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=justiandev&api_key=${process.env.API_KEY_MUSIC}&format=json&limit=1`);
   const json = await response.json();
   return json.recenttracks.track[0].artist["#text"];
 }
@@ -50,7 +50,7 @@ export default async function RootLayout({
       <Head>
         <link rel="stylesheet" href="https://use.typekit.net/gwp1pxd.css" />
       </Head>
-      <body className="max-w-4xl mx-auto xl:px-0 px-4 grid lg:grid-cols-12 grid-cols-1 lg:pt-32 lg:gap-8">
+      <body className="body max-w-4xl mx-auto xl:px-0 px-4 grid lg:grid-cols-12 grid-cols-1 lg:pt-32 lg:gap-8">
         <NavBar artist={artist} />
         <div className="col-span-1 lg:col-span-10">
           <main>

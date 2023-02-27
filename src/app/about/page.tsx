@@ -26,7 +26,7 @@ export default function Page() {
         <div className="grid grid-cols-3 md:grid-cols-4 gap-8">
           <div className="col-span-3">
             <p>
-              I am Justian Spijkerbosch. A full stack developer from Apeldoorn, Netherlands. I have been a hobby programmer for a number of years and since mid 2021 I have been studying computer science in Utrecht, the Netherlands. At this moment im doing an internship at <a href="https://mrboost.nl">MrBoost</a> and running my own freelancing company called justian.dev.
+              I am Justian Spijkerbosch. A full stack developer from Apeldoorn, Netherlands. I have been a hobby programmer for a number of years and since mid 2021 I have been studying computer science in Utrecht, the Netherlands. At this moment im doing an internship at <a href="https://mrboost.nl" target="_blank">MrBoost</a> and running my own freelancing company called justian.dev.
             </p>
           </div>
           <div className="col-span-3 md:col-span-1">
@@ -34,11 +34,11 @@ export default function Page() {
           </div>
         </div>
         <h2 className="mt-8 md:mt-0">My daily life</h2>
-        <p className="mt-2">I am currently doing an internship at <a href="https://mrboost.nl">MrBoost</a>, completing year 2 of my degree. At MrBoost I am fully focusing on becoming better in interaction development. I am doing this through learning about techniques such as GSAP and ThreeJS and building great projects with both of them.</p>
+        <p className="mt-2">I am currently doing an internship at <a href="https://mrboost.nl" target="_blank">MrBoost</a>, completing year 2 of my degree. At MrBoost I am fully focusing on becoming better in interaction development. I am doing this through learning about techniques such as GSAP and ThreeJS and building great projects with both of them.</p>
         <p className="mt-6">Besides wanting to become a better interaction developer, I am also always trying out (new) techniques and building cool projects with them, either for myself, or for others. For which you can also hire me.</p>
         <h2 className="mt-8"><span className="line-through">Dreaming about you</span> My dreams</h2>
         <p className="mt-2">
-          As an interaction developer I would love to win an <a href="https://awwwards.com">awwward</a>. As a developer I would love to be able to create things I now can’t even imagine, hardware related projects, complex animations or something like that. I don’t like to think in impossibilities and the power of creating until I reach the maximum of my creative powers will absolutely give me that freedom.
+          As an interaction developer I would love to win an <a href="https://awwwards.com" target="_blank">awwward</a>. As a developer I would love to be able to create things I now can’t even imagine, hardware related projects, complex animations or something like that. I don’t like to think in impossibilities and the power of creating until I reach the maximum of my creative powers will absolutely give me that freedom.
         </p>
         <div className="py-8">
           <hr />
