@@ -26,7 +26,7 @@ export default function Page() {
         <div className="grid grid-cols-3 md:grid-cols-4 gap-8">
           <div className="col-span-3">
             <p>
-              I am Justian Spijkerbosch. A full stack developer from Apeldoorn, Netherlands. I have been a hobby programmer for a number of years and since mid 2021 I have been studying computer science in Utrecht, the Netherlands. At this moment I work as a freelance full stack developer.
+              I am Justian Spijkerbosch. A full stack developer from Apeldoorn, Netherlands. I have been a hobby programmer for a number of years and since mid 2021 I have been studying computer science in Utrecht, the Netherlands. At this moment I work as a freelance full stack developer and in addition, I love to explore and learn new techniques by working on my own projects.
             </p>
           </div>
           <div className="col-span-3 md:col-span-1">
@@ -35,7 +35,7 @@ export default function Page() {
         </div>
         <h2 className="mt-8 md:mt-0">My daily life</h2>
         <p className="mt-2">I am currently doing an internship at <a href="https://mrboost.nl" target="_blank">MrBoost</a>, completing year 2 of my degree. At MrBoost I am fully focusing on becoming better in interaction development. I am doing this through learning about techniques such as GSAP and ThreeJS and building great projects with both of them.</p>
-        <p className="mt-6">Besides wanting to become a better interaction developer, I am also always trying out (new) techniques and building cool projects with them, either for myself, or for others. For which you can also hire me.</p>
+        <p className="mt-6">Besides wanting to become a better interaction developer, I am also always trying out (new) techniques and building cool projects with them, either for myself, or for others. I am always open to new challenges and in addition, I am not a quitter and like to work on finding solutions to deep technical problems.</p>
         <p className="mt-6">In my daily life, I otherwise enjoy spending time in nature, by taking walks or biking. I can also be found in the gym almost every day and for me this is the perfect combination with sitting at my desk most of the day as a programmer.</p>
         <h2 className="mt-8"><span className="line-through">Dreaming about you</span> My dreams</h2>
         <p className="mt-2">
@@ -44,7 +44,7 @@ export default function Page() {
         <div className="py-8">
           <hr />
           <h2 className="mt-8">My skills</h2>
-          <p className="mt-2">I have a good to very good command of all the skills listed below and can build complex systems with them. I also have a large number of "reasonable" skills such as small javascript libraries and various other programming languages. However, I do not have enough experience with these to list them below.</p>
+          <p className="mt-2">I have a good to very good command of all the skills listed below and can build complex systems with them. I also have a large number of reasonable skills such as small javascript libraries and various other programming languages. However, I do not have enough experience with these to list them below.</p>
           <div className="pt-6 pb-8 flex flex-row flex-wrap gap-4">
             <a href="https://www.typescriptlang.org/" target="_blank" className="post p-3 rounded-xl border border-stone-200">
               <Image src={typescript} alt={"Typescript logo"} />
