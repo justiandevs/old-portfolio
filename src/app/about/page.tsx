@@ -26,7 +26,7 @@ export default function Page() {
         <div className="grid grid-cols-3 md:grid-cols-4 gap-8">
           <div className="col-span-3">
             <p>
-              I am Justian Spijkerbosch. A full stack developer from Apeldoorn, Netherlands. I have been a hobby programmer for a number of years and since mid 2021 I have been studying computer science in Utrecht, the Netherlands. At this moment im doing an internship at <a href="https://mrboost.nl" target="_blank">MrBoost</a> and I work as a freelance full stack developer.
+              I am Justian Spijkerbosch. A full stack developer from Apeldoorn, Netherlands. I have been a hobby programmer for a number of years and since mid 2021 I have been studying computer science in Utrecht, the Netherlands. At this moment I work as a freelance full stack developer.
             </p>
           </div>
           <div className="col-span-3 md:col-span-1">
