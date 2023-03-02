@@ -26,7 +26,7 @@ export default function Page() {
         <div className="grid grid-cols-3 md:grid-cols-4 gap-8">
           <div className="col-span-3">
             <p>
-              I am Justian Spijkerbosch. A full stack developer from Apeldoorn, Netherlands. I have been a hobby programmer for a number of years and since mid 2021 I have been studying computer science in Utrecht, the Netherlands. At this moment im doing an internship at <a href="https://mrboost.nl" target="_blank">MrBoost</a> and running my own freelancing company called justian.dev.
+              I am Justian Spijkerbosch. A full stack developer from Apeldoorn, Netherlands. I have been a hobby programmer for a number of years and since mid 2021 I have been studying computer science in Utrecht, the Netherlands. At this moment im doing an internship at <a href="https://mrboost.nl" target="_blank">MrBoost</a> and I work as a freelance full stack developer.
             </p>
           </div>
           <div className="col-span-3 md:col-span-1">
@@ -36,44 +36,46 @@ export default function Page() {
         <h2 className="mt-8 md:mt-0">My daily life</h2>
         <p className="mt-2">I am currently doing an internship at <a href="https://mrboost.nl" target="_blank">MrBoost</a>, completing year 2 of my degree. At MrBoost I am fully focusing on becoming better in interaction development. I am doing this through learning about techniques such as GSAP and ThreeJS and building great projects with both of them.</p>
         <p className="mt-6">Besides wanting to become a better interaction developer, I am also always trying out (new) techniques and building cool projects with them, either for myself, or for others. For which you can also hire me.</p>
+        <p className="mt-6">In my daily life, I otherwise enjoy spending time in nature, by taking walks or biking. I can also be found in the gym almost every day and for me this is the perfect combination with sitting at my desk most of the day as a programmer.</p>
         <h2 className="mt-8"><span className="line-through">Dreaming about you</span> My dreams</h2>
         <p className="mt-2">
-          As an interaction developer I would love to win an <a href="https://awwwards.com" target="_blank">awwward</a>. As a developer I would love to be able to create things I now can’t even imagine, hardware related projects, complex animations or something like that. I don’t like to think in impossibilities and the power of creating until I reach the maximum of my creative powers will absolutely give me that freedom.
+          As an interaction developer I would love to win an <a href="https://awwwards.com" target="_blank">awwward</a>. Being a programmer, I would think it would be really cool to work at a company in the future, or work for myself, on a piece of software which preferably solves a social problem. In my private life, I would like to create the opportunity for myself to leave my childhood home and continue working on my software developer career somewhere on my own. In addition, I would like to grow further in the strength sports I am currently involved in almost daily.
         </p>
         <div className="py-8">
           <hr />
           <h2 className="mt-8">My skills</h2>
+          <p className="mt-2">I have a good to very good command of all the skills listed below and can build complex systems with them. I also have a large number of "reasonable" skills such as small javascript libraries and various other programming languages. However, I do not have enough experience with these to list them below.</p>
           <div className="pt-6 pb-8 flex flex-row flex-wrap gap-4">
-            <div className="p-3 rounded-xl border border-stone-200">
+            <a href="https://www.typescriptlang.org/" target="_blank" className="post p-3 rounded-xl border border-stone-200">
               <Image src={typescript} alt={"Typescript logo"} />
-            </div>
-            <div className="p-3 rounded-xl border border-stone-200">
+            </a>
+              <a href="https://www.javascript.com/" target="_blank"  className="p-3 rounded-xl border border-stone-200">
               <Image src={javascript} alt={"Javascript logo"} />
-            </div>
-            <div className="p-3 rounded-xl border border-stone-200">
+            </a>
+            <a href="https://nestjs.com/" target="_blank" className="p-3 rounded-xl border border-stone-200">
               <Image src={nest} alt={"NestJS logo"} />
-            </div>
-            <div className="p-3 rounded-xl border border-stone-200">
+            </a>
+            <a href="https://reactjs.org" target="_blank" className="p-3 rounded-xl border border-stone-200">
               <Image src={react} alt={"React logo"} />
-            </div>
-            <div className="p-3 rounded-xl border border-stone-200">
+            </a>
+            <a href="https://nextjs.org" target="_blank" className="p-3 rounded-xl border border-stone-200">
               <Image src={next} alt={"NextJS logo"} />
-            </div>
-            <div className="p-3 rounded-xl border border-stone-200">
+            </a>
+            <a href="https://jetbrains.com" target="_blank" className="p-3 rounded-xl border border-stone-200">
               <Image src={jetbrains} alt={"Jetbrains logo"} />
-            </div>
-            <div className="p-3 rounded-xl border border-stone-200">
+            </a>
+            <a href="https://notion.com" target="_blank" className="p-3 rounded-xl border border-stone-200">
               <Image src={notion} alt={"Notion logo"} />
-            </div>
-            <div className="p-3 rounded-xl border border-stone-200">
+            </a>
+            <a href="https://git-scm.com" target="_blank" className="p-3 rounded-xl border border-stone-200">
               <Image src={git} alt={"Git logo"} />
-            </div>
-            <div className="p-3 rounded-xl border border-stone-200">
+            </a>
+            <a href="https://adobe.com" target="_blank" className="p-3 rounded-xl border border-stone-200">
               <Image src={adobexd} alt={"Adobe XD logo"} />
-            </div>
-            <div className="p-3 rounded-xl border border-stone-200">
+            </a>
+            <a href="https://figma.com" target="_blank" className="p-3 rounded-xl border border-stone-200">
               <Image src={figma} alt={"Figma logo"} />
-            </div>
+            </a>
           </div>
           <hr />
         </div>

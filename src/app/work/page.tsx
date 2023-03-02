@@ -27,19 +27,17 @@ async function getAllProjects() {
 
   return {
     featured: sortedProjects.filter((project) => project.type === "featured"),
-    forOthers: sortedProjects.filter((project) => project.type === "for-others"),
-    opensource: sortedProjects.filter((project) => project.type === "opensource")
   }
 }
 
 export default async function Work() {
-  const { featured, forOthers, opensource } = await getAllProjects();
+  const { featured } = await getAllProjects();
 
   return (
     <>
       <Hero title="My work 🎨" description="I like to build on awesome projects" />
       <section className="content">
-        <h2>Featured</h2>
+        <h2>My projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8 mt-6">
           {featured.map((project) => {
             return (
@@ -55,30 +53,6 @@ export default async function Work() {
             <p>Need a full-stack developer? I stay open for working on new cool projects.</p>
             <p className="text-green-700 font-bold underline">Hire me</p>
           </Link>
-        </div>
-        <h2>Opensource</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8 mt-6">
-          {opensource.map((project) => {
-            return (
-              <Link href={`/work/${project.data.slug}`}  key={project.data.slug} className="post border border-stone-200 rounded-xl px-8 py-4 flex flex-col gap-2">
-                <h3>{project.data.title}</h3>
-                <p>{project.data.description}</p>
-                <p className="font-bold underline text-green-700">View more</p>
-              </Link>
-            )
-          })}
-        </div>
-        <h2>For others</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8 mt-6">
-          {forOthers.map((project) => {
-            return (
-              <Link href={`/work/${project.data.slug}`}  key={project.data.slug} className="post border border-stone-200 rounded-xl px-8 py-4 flex flex-col gap-2">
-                <h3>{project.data.title}</h3>
-                <p>{project.data.description}</p>
-                <p className="font-bold underline text-green-700">View more</p>
-              </Link>
-            )
-          })}
         </div>
       </section>
     </>

@@ -81,9 +81,9 @@ export default function Page() {
         <div>
           <h2>Socials</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 mt-6 gap-4">
-            <a href="https://github.com/justiandevs" target="_blank" className="button__is-large col-span-1"><FaGithub className="icon__button" />GitHub</a>
-            <a href="https://twitter.com/Justiandev" target="_blank" className="button__is-large col-span-1"><FaTwitter className="icon__button" />Twitter</a>
             <a href="https://www.linkedin.com/in/justian-spijkerbosch-a4b74118b/" target="_blank" className="button__is-large col-span-1"><FaLinkedin className="icon__button" />LinkedIn</a>
+            <a href="https://twitter.com/Justiandev" target="_blank" className="button__is-large col-span-1"><FaTwitter className="icon__button" />Twitter</a>
+            <a href="https://github.com/justiandevs" target="_blank" className="button__is-large col-span-1"><FaGithub className="icon__button" />GitHub</a>
             <a href="https://www.instagram.com/justianspijkerbosch" target="_blank" className="button__is-large col-span-1"><FaInstagram className="icon__button" />Instagram</a>
           </div>
         </div>
