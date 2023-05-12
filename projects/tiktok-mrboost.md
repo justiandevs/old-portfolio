@@ -1,0 +1,15 @@
+---
+title: TikTok Mrboost
+slug: tiktok-mrboost
+description: An website for the TikTok agency powered by MrBoost
+type: featured
+button_text: View project
+button_link: https://mrboost.mrboost.nl
+---
+![archive mrboost front view](/assets/mrboost-tiktok.png)
+
+## What is TikTok MrBoost
+TikTok MrBoost is an agency that provides TikTok services to companies such as MrBoost and GoVolt, among these services they include creating content, coming up with concepts for the content and scouting TikTok creators.
+
+## What I did for this website
+For this website, I translated the design that was already created into a working website, including all the pre-conceived animations. I did this by using the NoCode tool WebFlow and for some more advanced animations I used GSAP, which is a Javascript Library for animations. 
